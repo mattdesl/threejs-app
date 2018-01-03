@@ -21,7 +21,7 @@ class AssetManager {
     this._cache = {};
     this._queue = [];
     this._renderer = opt.renderer;
-    this._asyncLimit = 2;
+    this._asyncLimit = 10;
     this._onProgressListeners = [];
     this._finishDelay = 0;
   }
