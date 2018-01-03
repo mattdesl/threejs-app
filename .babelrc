@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "babel-preset-env", {
+        "useBuiltIns": "usage"
+      }
+    ]
+  ],
+  "ignore": "src/vendor/*.js",
+  "plugins": [
+    "babel-plugin-transform-class-properties"
+  ]
+}

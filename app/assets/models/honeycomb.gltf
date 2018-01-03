@@ -1,0 +1,155 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0, 
+            "componentType" : 5123, 
+            "count" : 612, 
+            "max" : [
+                335
+            ], 
+            "min" : [
+                0
+            ], 
+            "type" : "SCALAR"
+        }, 
+        {
+            "bufferView" : 1, 
+            "componentType" : 5126, 
+            "count" : 336, 
+            "max" : [
+                1.132531762123108, 
+                0.9043031930923462, 
+                0.2850000262260437
+            ], 
+            "min" : [
+                -1.132531762123108, 
+                -0.9043031930923462, 
+                -0.2850000262260437
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 2, 
+            "componentType" : 5126, 
+            "count" : 336, 
+            "max" : [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                -1.0, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }
+    ], 
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter", 
+        "version" : "2.0"
+    }, 
+    "bufferViews" : [
+        {
+            "buffer" : 0, 
+            "byteLength" : 1224, 
+            "byteOffset" : 0, 
+            "target" : 34963
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 4032, 
+            "byteOffset" : 1224, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 4032, 
+            "byteOffset" : 5256, 
+            "target" : 34962
+        }
+    ], 
+    "buffers" : [
+        {
+            "byteLength" : 9288, 
+            "uri" : "honeycomb.bin"
+        }
+    ], 
+    "meshes" : [
+        {
+            "name" : "honeycomb", 
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2, 
+                        "POSITION" : 1
+                    }, 
+                    "indices" : 0
+                }
+            ]
+        }
+    ], 
+    "nodes" : [
+        {
+            "name" : "camera", 
+            "rotation" : [
+                0.466261088848114, 
+                0.3226812779903412, 
+                -0.1875857561826706, 
+                0.8020530343055725
+            ], 
+            "translation" : [
+                7.333371162414551, 
+                6.029646873474121, 
+                7.63869571685791
+            ]
+        }, 
+        {
+            "name" : "camera_target"
+        }, 
+        {
+            "mesh" : 0, 
+            "name" : "honeycomb", 
+            "scale" : [
+                1.0, 
+                0.9995182752609253, 
+                1.0
+            ]
+        }, 
+        {
+            "name" : "light_target"
+        }, 
+        {
+            "name" : "sun", 
+            "rotation" : [
+                0.18757343292236328, 
+                0.749933123588562, 
+                -0.23946259915828705, 
+                0.5874302387237549
+            ], 
+            "scale" : [
+                1.0, 
+                1.0, 
+                0.9999998211860657
+            ], 
+            "translation" : [
+                4.076245307922363, 
+                5.903861999511719, 
+                -1.0054539442062378
+            ]
+        }
+    ], 
+    "scene" : 0, 
+    "scenes" : [
+        {
+            "name" : "Scene", 
+            "nodes" : [
+                2, 
+                3, 
+                4, 
+                1, 
+                0
+            ]
+        }
+    ]
+}
