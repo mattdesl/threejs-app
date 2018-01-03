@@ -32,7 +32,7 @@ Clone, `npm install`, then:
 npm run start
 ```
 
-Now open [localhost:9966](http://localhost:9966/) and start editing your source code. Edit the `honey.frag` or `honey.vert` to see it re-reloaded without losing application state.
+Now open [localhost:9966](http://localhost:9966/) and start editing your source code. Edit the `honey.frag` or `honey.vert` to see it reloaded without losing application state.
 
 You can launch [localhost:9966/?gui](http://localhost:9966/?gui) to open dat.gui.
 
