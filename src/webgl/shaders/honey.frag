@@ -4,6 +4,11 @@ uniform float time;
 
 varying vec3 vNormal;
 
+// Because this is glslify, you can import
+// GLSL modules from npm like 'glsl-noise'
+
+// Also, using glslify-hex, you can use #ff00ff to create vec3 colors
+
 void main () {
   vec3 norm = vNormal * 0.5 + 0.5;
   float t = norm.x;
