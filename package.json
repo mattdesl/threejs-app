@@ -21,7 +21,7 @@
     "load-json-xhr": "^3.0.3",
     "map-limit": "0.0.1",
     "object-assign": "^4.1.1",
-    "orbit-controls": "^1.2.3",
+    "orbit-controls": "^1.2.4",
     "preact": "^8.2.7",
     "preact-transition-group": "^1.1.1",
     "query-string": "^5.0.1",
