@@ -76,6 +76,14 @@ module.exports = class WebGLApp extends EventEmitter {
     return this._running;
   }
 
+  animateIn (opt = {}) {
+    this._traverse('animateIn', opt);
+  }
+
+  onAppDidUpdate (oldProps, oldState, newProps, newState) {
+    this._traverse('onAppDidUpdate', oldProps, oldState, newProps, newState);
+  }
+
   resize (width, height, pixelRatio) {
     // get default values
     width = defined(width, window.innerWidth);

@@ -1,0 +1,22 @@
+.MaterialButton {
+  .interactive;
+  .noselect;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.5s @easeOutCubic;
+  background: rgba(25, 25, 25, 0.85);
+  transform: scale(0.95);
+  opacity: 0;
+  &:hover {
+    transition: all 0.25s @easeOutCubic;
+    background: rgba(25, 25, 25, 1.0);
+    transform: scale(1.0);
+  }
+  &:active {
+    transition: all 0.1s @easeOutCubic;
+    background: rgb(213,70,70);
+  }
+}

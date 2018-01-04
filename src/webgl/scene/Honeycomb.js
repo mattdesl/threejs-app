@@ -2,6 +2,7 @@ const { gui, webgl, assets } = require('../../context');
 
 const LiveShaderMaterial = require('../materials/LiveShaderMaterial');
 const honeyShader = require('../shaders/honey.shader');
+const animate = require('@jam3/gsap-promise');
 
 // tell the preloader to include this asset
 // we need to define this outside of our class, otherwise
@@ -18,12 +19,18 @@ module.exports = class Honeycomb extends THREE.Object3D {
     const gltf = assets.get(gltfKey);
 
     this.material = new LiveShaderMaterial(honeyShader, {
+      transparent: true,
       uniforms: {
+        alpha: { value: 0 },
         time: { value: 0 },
         colorA: { value: new THREE.Color('rgb(213,70,70)') },
         colorB: { value: new THREE.Color('rgb(223,191,86)') }
       }
     });
+
+    this.altMaterial = new THREE.MeshNormalMaterial();
+
+    this.children = [];
 
     // Replaces all meshes material with something basic
     gltf.scene.traverse(child => {
@@ -32,6 +39,7 @@ module.exports = class Honeycomb extends THREE.Object3D {
 
         // ThreeJS attaches something odd here on GLTF ipmport
         child.onBeforeRender = () => {};
+        this.children.push(child);
       }
     });
 
@@ -52,6 +60,25 @@ module.exports = class Honeycomb extends THREE.Object3D {
       folder.addColor(settings, 'colorB').onChange(update);
       folder.open();
     }
+  }
+
+  onAppDidUpdate (oldProps, oldState, newProps, newState) {
+    const material = newState.isAltMaterial ? this.altMaterial : this.material;
+    this.children.forEach(child => { child.material = material; });
+  }
+
+  animateIn (opt = {}) {
+    animate.to(this.material.uniforms.alpha, 2.0, {
+      ...opt,
+      value: 1
+    });
+    animate.fromTo(this.rotation, 2.0, {
+      x: -Math.PI / 4
+    }, {
+      ...opt,
+      x: 0,
+      ease: Expo.easeOut
+    });
   }
 
   update (dt = 0, time = 0) {

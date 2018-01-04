@@ -10,11 +10,12 @@ if (!query.gui) {
   document.querySelector('.dg.ac').style.display = 'none';
 }
 
-// Grab our canvas
-const canvas = document.querySelector('.main-canvas');
+// Create a canvas
+const canvas = document.createElement('canvas');
 
 // Setup the WebGLRenderer
 const webgl = new WebGLApp({
+  background: 'white',
   canvas
 });
 

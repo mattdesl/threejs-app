@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 16px;
+  color: #1d1d1d;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+
+  // So that 1rem = 10px
+  font-size: 62.5%; 
+}
+
+@import "./mixins.less";
+@import "../components/**/*.less";
+@import "../sections/**/*.less";
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  // Annoying hack to "click through" to the canvas
+  pointer-events: none;
+}
