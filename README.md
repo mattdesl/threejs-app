@@ -6,9 +6,7 @@
 
 My current organization for medium & large WebGL + UI apps (i.e. must scale to a large team and run the course of a few months).
 
-> ⚛ This version includes Preact for scalable UI components and a simple way of communicating between Preact and WebGL.
-
-See the [master](https://github.com/mattdesl/threejs-app) branch for an easier boilerplate that does not include all the Preact/UI features.
+> ⚛ This version includes [Preact](https://github.com/developit/preact) for scalable UI components and a simple way of communicating between Preact and WebGL. See the [master](https://github.com/mattdesl/threejs-app) branch for an easier boilerplate that does not include all the Preact/UI features.
 
 This is by no means stable; you probably shouldn't just go cloning it and trying to build your own apps. It is really opinionated and has a lot of things that might seem odd or overkill (though I have found them necessary on most big projects). Instead, you may just want to study it to see if you can find anything of interest.
 
