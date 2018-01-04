@@ -4,6 +4,8 @@
 
 My current organization for medium & large WebGL apps (i.e. must scale to a large team and run the course of a few months).
 
+> ⚛ This branch only includes bare WebGL. If you want UI (with [Preact](https://github.com/developit/preact)), see the [preact](https://github.com/mattdesl/threejs-app/tree/preact) branch.
+
 This is by no means stable; you probably shouldn't just go cloning it and trying to build your own apps. It is really opinionated and has a lot of things that might seem odd or overkill (though I have found them necessary on most big projects). Instead, you may just want to study it to see if you can find anything of interest.
 
 Some things it tries to do:
