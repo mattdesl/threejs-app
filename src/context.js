@@ -1,7 +1,7 @@
 const WebGLApp = require('./webgl/WebGLApp');
 const AssetManager = require('./util/AssetManager');
 const query = require('./util/query');
-const dat = require('dat.gui').default;
+const dat = require('dat.gui');
 
 // Setup dat.gui
 const gui = new dat.GUI();
